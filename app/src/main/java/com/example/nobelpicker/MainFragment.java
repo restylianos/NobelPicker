@@ -38,7 +38,6 @@ public class MainFragment extends Fragment {
     private void handleShowResults(int idx) {
         if (getResources().getConfiguration().orientation ==
                 Configuration.ORIENTATION_LANDSCAPE) {
-            System.out.println("insdie if");
             FragmentInfo frag = (FragmentInfo) getFragmentManager().findFragmentById(R.id.fragment_info);
             frag.setResults(idx);
         } else {
@@ -46,6 +45,10 @@ public class MainFragment extends Fragment {
             intent.putExtra("selectedIdx", idx);
             startActivity(intent);
         }
+    }
+
+    public MainFragment() {
+        // Required empty public constructor
     }
 
 

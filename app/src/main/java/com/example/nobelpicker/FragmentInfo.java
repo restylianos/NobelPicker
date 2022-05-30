@@ -39,7 +39,6 @@ public class FragmentInfo extends Fragment {
     }
 
     public void setResults(int idx) {
-        System.out.println("I run idx:" + idx);
         TextView winnerBio = (TextView) getActivity().findViewById(R.id.winner_bio);
         TextView winnerName = (TextView) getActivity().findViewById(R.id.winner_name);
         ImageView winnerImage = (ImageView) getActivity().findViewById(R.id.winner_photo);
